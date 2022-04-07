@@ -1,3 +1,3 @@
 # BaiTap_Reactjs_Form_Lifecycle
 
-link deploy: https://reactjs-form-lifecycle.surge.sh/
+link deploy: dn05.btformlifecycle.dovannhat.surge.sh
