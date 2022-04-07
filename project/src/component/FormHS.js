@@ -97,11 +97,17 @@ class FormHS extends Component {
     document.getElementById("maSV").removeAttribute("disabled");
     document.getElementById("update").classList.add("none");
     document.getElementById("add").classList.remove("none");
+    let curentValue = {...this.state.vn}
     let action = {
       type: "CAP_NHAP",
       sv: this.state.sv,
     };
     this.props.dispatch(action);
+    let checkUpdate = this.props.mangSV.find(sv=> curentValue===sv)
+    if(!checkUpdate){
+      alert("update ko thanh cong tai du lieu bi khong con")
+    }
+    
   };
 
   render() {
